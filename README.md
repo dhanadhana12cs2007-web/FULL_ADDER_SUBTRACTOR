@@ -43,6 +43,8 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
+
+```
 module fulladd_top(a,b,c,sum,carry,BO,DIFF);
 input a,b,c;
 output sum,carry,BO,DIFF;
@@ -53,7 +55,7 @@ not (a0,a);
 assign BO= b&c | a0&c | a0&b;
 assign DIFF=a^b^c;
 endmodule
-
+```
 
 Developed by:  V.DHANADEVAN
 
